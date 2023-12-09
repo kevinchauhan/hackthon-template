@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+
+:root{
+    --text-grey : #B7B4BB !important;
+}
+
+.text-grey{
+    color: var(--text-grey);
+}
+
+body{
+    background-color: #0F051D !important;
+}
+
+.font-theme{
+    font-family: 'Power Grotesk' !important;
+}
+
+.title{
+    font-size: 72px;
+    line-height: 1;
+}
+.sec-padding-banner{
+    padding: 215px 0 118px;
+} 
+.sec-padding{
+    padding: 124px 0 100px;
+} 
+
+.text-gradiant{
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fs-20{
+    font-size: 20px !important;
+}
+
+
+/* ------------------------------Header Start------------------------------- */
+
+/* ------------------------------Header End------------------------------- */
+/* ------------------------------Main-banner Start------------------------------- */
+.gradiant-position {
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+.gradiant-position img{
+    -webkit-filter: blur(80px);
+    filter: blur(80px);
+}
+
+.banner-bg-img{
+    background-image: url('../images/gradient_bg01.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+}
+
+.btn-gradiant{
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    padding: 11px 40px;
+    transform: scale(1);
+}
+
+/* ------------------------------Main-banner End------------------------------- */
+/* ------------------------------About Area End------------------------------- */
+
+/* ------------------------------About Area End------------------------------- */
+/* ------------------------------roadmap start------------------------------- */
+.roadmap-content::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(50%);
+    width: 1px;
+    height: 100%;
+    background-color: #e5e5e5;
+    opacity: 0.3;
+}
+.roadmap-card{
+    border-radius: 32px;
+    box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.05);
+    max-width: 468px;
+}
+.roadmap-card::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 6px solid #0F051D;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(calc(100% + 57px), -50%);
+    z-index: 2;
+    box-shadow: 0 0 0 2px rgba(151, 151, 151, 0.2);
+}
+.roadmap-card:nth-child(even)::after{
+    left: 0;
+    transform: translate(calc(-100% - 57px), -50%);
+}
+.count{
+    transform: rotate(36deg);
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    width: 50px;
+    height: 50px;
+}
+.count span{
+    margin-bottom: 3px;
+}
+
+/* ------------------------------roadmap End------------------------------- */
+/* ------------------------------subscription End------------------------------- */
+.price-card{
+        border-radius: 32px;
+        box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.08);
+        background-color: rgba(255, 255, 255, 0.05);
+        max-width: 468px;
+}
+/* ------------------------------subscription End------------------------------- */
+/* ------------------------------Contact start------------------------------- */
+.bg-contact{
+    background-image: url('../images/map.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+}
+/* ------------------------------Contact End------------------------------- */
